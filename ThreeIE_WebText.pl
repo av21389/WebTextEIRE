@@ -23,8 +23,8 @@ $mech->field("username", $username);
 $mech->field("password", $password);
 $mech->click;
 
-#Click Webtext Link
-$mech->follow_link( url => 'https://messaging.three.ie/messages/send' );
+#Click Webtext Link - Not Necessary
+#$mech->follow_link( url => 'https://messaging.three.ie/messages/send' );
 
 #Send Message using HTTP POST Request
 my $uri = "https://messaging.three.ie/messages/send";
